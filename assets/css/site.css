@@ -34,7 +34,7 @@ nav ul {
   padding: 0;
 }
 
-nav a { color: #FFFFFF; text-decoration: none; font-weight: 600; }
+nav a { color: #000000; text-decoration: none; font-weight: 600; }
 
 .lista-especialidades {          /* o contêiner: decide o arranjo do conjunto */
   display: flex;
@@ -70,3 +70,7 @@ footer {
   padding: 24px 32px;
   margin-top: 40px;
 }
+
+.oculto { display: none; }
+.aviso { color: #C84B31; font-size: 0.9rem; }
+.campo-invalido { border-color: #C84B31; }

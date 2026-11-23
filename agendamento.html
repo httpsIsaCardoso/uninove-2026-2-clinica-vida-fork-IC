@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="assets/css/site.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Vida+</title>
+    <script src="assets/js/agendamento.js" defer></script>
 </head>
 <body>
 <header>
     <h1>Clínica Vida+</h1>
     <p>Agendamento de consultas em seis especialidades.</p>
 </header>
-<form class="form-agendamento" action="/agendamento" method="post">
+
+<nav>
+    <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="#apresentacao">A clínica</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#corpo-clinico">Corpo clínico</a></li>
+    </ul>
+</nav>
+
+<form id="form-agendamento" action="#" method="post">
   <fieldset>
     <legend>Dados do paciente</legend>
     <div class="form-grid">
       <div class="campo">
         <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" minlength="5" required>
+        <input type="text" id="nome" name="nome" required>
       </div>
       <div class="campo">
         <label for="cpf">CPF</label>
         <input type="text" id="cpf" name="cpf"
                placeholder="000.000.000-00"
                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+               <span class="aviso" id="aviso-cpf"></span>
       </div>
       <div class="campo">
         <label for="nascimento">Data de nascimento</label>
